@@ -4,3 +4,15 @@
 /.nb-gradle
 /.idea
 /out
+
+NhlStatistics1/build
+NhlStatistics1/.gradle
+NhlStatistics1/.idea
+NhlStatistics1/.nb-gradle
+NhlStatistics1/NhlStatistics1.iml
+
+RiippuvuuksienInjektointi1/build
+RiippuvuuksienInjektointi1/.gradle
+RiippuvuuksienInjektointi1/.idea
+RiippuvuuksienInjektointi1/.nb-gradle
+RiippuvuuksienInjektointi1/RiippuvuuksienInjektointi1.iml
