@@ -19,7 +19,7 @@ class IOStub implements IO {
 
     private int[] inputs;
     private int mones;
-    private ArrayList<String> outputs;
+    public ArrayList<String> outputs;
 
     public IOStub(int... inputs) {
         this.inputs = inputs;
