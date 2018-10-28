@@ -1,7 +1,5 @@
 package ohtu.laskin;
 
-
-
 import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -19,9 +17,9 @@ public class LaskinTest {
 
 class IOStub implements IO {
 
-    int[] inputs;
-    int mones;
-    ArrayList<String> outputs;
+    private int[] inputs;
+    private int mones;
+    private ArrayList<String> outputs;
 
     public IOStub(int... inputs) {
         this.inputs = inputs;

@@ -32,7 +32,7 @@ public class StatisticsTest {
         }
     };
  
-    Statistics stats;
+    private Statistics stats;
 
     @Before
     public void setUp(){
