@@ -65,4 +65,29 @@ public class VarastoTest {
         assertEquals(4, varasto.paljonkoMahtuu(), vertailuTarkkuus);
     }
 
+    @Test
+    public void noRoom() {
+        Varasto empty = new Varasto(-1);
+
+        empty.lisaaVarastoon(1);
+        empty.lisaaVarastoon(-2);
+
+        Assert.assertEquals(0, empty.paljonkoMahtuu(), 0.001);
+        Assert.assertEquals(0, empty.otaVarastosta(1), 0.001);
+        Assert.assertTrue(empty.toString().contains("saldo = 0.0, vielä tilaa 0.0"));
+    }
+
+    @Test
+    public void Error() {
+        Varasto empty = new Varasto(-2, 1);
+
+        Assert.assertEquals(0, empty.otaVarastosta(-1), 0.001);
+        Assert.assertEquals(0, empty.paljonkoMahtuu(), 0.001);
+
+        Varasto notEmpty = new Varasto(10, 5);
+        Varasto notError = new Varasto(10, -10);
+
+        Assert.assertEquals(5, notEmpty.paljonkoMahtuu(), 0.001);
+        Assert.assertEquals(10, notError.paljonkoMahtuu(), 0.001);
+    }
 }

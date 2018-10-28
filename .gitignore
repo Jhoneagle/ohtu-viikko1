@@ -2,3 +2,4 @@
 *.tmp
 /.gradle
 /.nb-gradle
+/.idea
