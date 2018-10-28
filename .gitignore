@@ -10,6 +10,8 @@ NhlStatistics1/.gradle
 NhlStatistics1/.idea
 NhlStatistics1/.nb-gradle
 NhlStatistics1/NhlStatistics1.iml
+NhlStatistics1/bin
+NhlStatistics1/.settings
 
 RiippuvuuksienInjektointi1/build
 RiippuvuuksienInjektointi1/.gradle
