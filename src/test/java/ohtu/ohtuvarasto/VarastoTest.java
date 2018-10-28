@@ -72,7 +72,7 @@ public class VarastoTest {
         empty.lisaaVarastoon(1);
         empty.lisaaVarastoon(-2);
 
-        Assert.assertEquals(1, empty.paljonkoMahtuu(), 0.001);
+        Assert.assertEquals(0, empty.paljonkoMahtuu(), 0.001);
         Assert.assertEquals(0, empty.otaVarastosta(1), 0.001);
         Assert.assertTrue(empty.toString().contains("saldo = 0.0, vielä tilaa 0.0"));
     }
