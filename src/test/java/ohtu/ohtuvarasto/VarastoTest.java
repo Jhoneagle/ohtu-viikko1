@@ -76,6 +76,13 @@ public class VarastoTest {
         Assert.assertEquals(0, empty.otaVarastosta(1), 0.001);
         Assert.assertTrue(empty.toString().contains("saldo = 0.0, vielä tilaa 0.0"));
     }
+    
+    @Test
+    public void tooMuch() {
+        Varasto full = new Varasto(10, 20);
+
+        Assert.assertEquals(0, full.paljonkoMahtuu(), 0.001);
+    }
 
     @Test
     public void Error() {
